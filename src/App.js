@@ -67,6 +67,7 @@ class App extends Component {
                         select your color
                     </p>
                     <div style={{color: '#000'}}>
+                        <pre>default selected value is red, update react-select selected value by setting props value</pre>
                         <pre>inputValue: "{this.state.inputValue}"</pre>
                         <pre style={{color: this.state.selectedValue.value}}>
                             selectedValue: "{this.state.selectedValue.value}"
