@@ -3,7 +3,6 @@ import logo from './logo.svg';
 import './App.css';
 import AsyncSelect from 'react-select/lib/Async';
 
-
 class App extends Component {
     constructor() {
         super();
@@ -29,7 +28,8 @@ class App extends Component {
         };
     }
 
-    filterColors = (inputValue) => this.colourOptions.filter(i => i.label.toLowerCase().includes(inputValue.toLowerCase()));
+    filterColors = (inputValue) =>
+        this.colourOptions.filter(i => i.label.toLowerCase().includes(inputValue.toLowerCase()));
 
     loadOptions = (inputValue, callback) => {
         setTimeout(() => {
@@ -47,7 +47,6 @@ class App extends Component {
         return newValue;
     };
 
-
     onChange = (selected, action) => {
         this.setState(prevState => {
             return {
@@ -58,7 +57,6 @@ class App extends Component {
         console.log('selected', selected);
         console.log('action', action);
     };
-
 
     render() {
         return (
